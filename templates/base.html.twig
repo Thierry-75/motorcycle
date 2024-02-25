@@ -14,6 +14,11 @@
         {% endblock %}
     </head>
     <body>
+    <div class="min-h-screen"> <!--- necessaire footer bottom --->
+    {% include "partials/_header.html.twig"  %}
         {% block body %}{% endblock %}
+     {%  include "partials/_footer.html.twig" %}
+     </div>     
+
     </body>
 </html>
